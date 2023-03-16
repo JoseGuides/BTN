@@ -12,6 +12,7 @@ public class TelaB1 extends AppCompatActivity {
     int valor1;
     int valor2;
     int result;
+    int result3456;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
