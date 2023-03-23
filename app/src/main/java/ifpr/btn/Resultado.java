@@ -12,7 +12,7 @@ public class Resultado extends AppCompatActivity {
 
     TextView txtResult;
 
-
+//
     Intent it = getIntent();
 
     @Override
@@ -26,7 +26,7 @@ public class Resultado extends AppCompatActivity {
         String num1 = it.getStringExtra("num1");
         String num2 = it.getStringExtra("num2");
 
-        double result = double.parseDouble(num1);
+        //double result = double.parseDouble(num1);
 
 
         txtResult.setText(num1+num2);
