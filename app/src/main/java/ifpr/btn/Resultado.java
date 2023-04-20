@@ -14,6 +14,7 @@ public class Resultado extends AppCompatActivity {
 
     TextView txtResult;
     Button button;
+    Button btnEdit;
 
 
 //
@@ -25,27 +26,41 @@ public class Resultado extends AppCompatActivity {
         setContentView(R.layout.activity_resultado);
 
         txtResult=findViewById(R.id.txtResutl);
+        button = findViewById(R.id.button);
+        btnEdit = findViewById(R.id.btnEdit);
 
         Intent it = getIntent();
-        //String num1 = it.getStringExtra("num1");
-        //String num2 = it.getStringExtra("num2");
+        String num1 = it.getStringExtra("num1");
+        String num2 = it.getStringExtra("num2");
         String resultado = it.getStringExtra("result");
+
+
 
         txtResult.setText(resultado);
 
-        button = findViewById(R.id.button);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Resultado.this, TelaB1.class);
 
-
+                it.putExtra("num1", num1);
+                it.putExtra("num2", num2);
 
 
                 startActivity(it);
             }
         });
 
+
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Resultado.this, TelaB1.class);
+
+
+            }
+        });
     }
 }

@@ -24,39 +24,48 @@ public class TelaB1 extends AppCompatActivity {
         setContentView(R.layout.activity_b1);
 
 
-        etnum1=findViewById(R.id.etNum1);
-        etnum2=findViewById(R.id.etNum2);
+        etnum1 = findViewById(R.id.etNum1);
+        etnum2 = findViewById(R.id.etNum2);
 
-        btnV1=findViewById(R.id.btnV1);
-        btnSoma=findViewById(R.id.btnSoma);
-        btnSubtra=findViewById(R.id.btnSubtra);
-        btnDiv=findViewById(R.id.btnDiv);
-        btnMul=findViewById(R.id.btnMul);
+        btnV1 = findViewById(R.id.btnV1);
+        btnSoma = findViewById(R.id.btnSoma);
+        btnSubtra = findViewById(R.id.btnSubtra);
+        btnDiv = findViewById(R.id.btnDiv);
+        btnMul = findViewById(R.id.btnMul);
+
+
+        Intent it = getIntent();
+
+        String num1 = it.getStringExtra("num1");
+        String num2 = it.getStringExtra("num2");
+
+        etnum1.setText(num1);
+        etnum2.setText(num2);
 
 
         btnSoma.setOnClickListener(new View.OnClickListener() {
-                                       @Override
-                                       public void onClick(View view) {
+            @Override
+            public void onClick(View view) {
 
-                                           Intent it = new Intent(TelaB1.this, Resultado.class);
+                Intent it = new Intent(TelaB1.this, Resultado.class);
 
-                                           it.putExtra("num1", etnum1.getText().toString());
-                                           it.putExtra("num2", etnum2.getText().toString());
+                it.putExtra("num1", etnum1.getText().toString());
+                it.putExtra("num2", etnum2.getText().toString());
 
-                                           String num1 = etnum1.getText().toString();
-                                           String num2 = etnum2.getText().toString();
+                String num1 = etnum1.getText().toString();
+                String num2 = etnum2.getText().toString();
 
-                                           double d1 = Double.parseDouble(num1);
-                                           double d2 = Double.parseDouble(num2);
-                                           double r = d1 + d2;
+                double d1 = Double.parseDouble(num1);
+                double d2 = Double.parseDouble(num2);
+                double r = d1 + d2;
 
-                                           String result = String.valueOf(r);
-                                           it.putExtra("result", result);
+                String result = String.valueOf(r);
+                it.putExtra("result", result);
 
-                                           startActivity(it);
+                startActivity(it);
 
-                                       }
-                                   });
+            }
+        });
 
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,14 +138,14 @@ public class TelaB1 extends AppCompatActivity {
 
             }
         });
-                btnV1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent it = new Intent(TelaB1.this, Menu.class);
+        btnV1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(TelaB1.this, Menu.class);
 
 
-                        startActivity(it);
-                    }
-                });
+                startActivity(it);
+            }
+        });
     }
 }
