@@ -43,10 +43,9 @@ public class Resultado extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Resultado.this, TelaB1.class);
+                Intent it = new Intent(Resultado.this, Menu.class);
 
-                it.putExtra("num1", num1);
-                it.putExtra("num2", num2);
+
 
 
                 startActivity(it);
@@ -58,8 +57,9 @@ public class Resultado extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Resultado.this, TelaB1.class);
-
-
+                it.putExtra("num1", num1);
+                it.putExtra("num2", num2);
+                startActivity(it);
             }
         });
     }

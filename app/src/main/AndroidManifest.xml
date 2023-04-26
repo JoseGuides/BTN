@@ -12,6 +12,15 @@
         android:theme="@style/Theme.BTN"
         tools:targetApi="31">
         <activity
+            android:name=".Real_dolar"
+            android:exported="false" />
+        <activity
+            android:name=".Acerto"
+            android:exported="false" />
+        <activity
+            android:name=".Teste_memoria"
+            android:exported="false" />
+        <activity
             android:name=".Resultado"
             android:exported="false" />
         <activity
