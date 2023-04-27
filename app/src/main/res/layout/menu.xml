@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="PROJETOS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,8 +18,8 @@
 
     <Button
         android:id="@+id/btn01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="183dp"
+        android:layout_height="44dp"
         android:text="Calculadora"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,8 +29,8 @@
 
     <Button
         android:id="@+id/btn02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
         android:text="Jogo da memória"
         app:layout_constraintBottom_toTopOf="@+id/btn01"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,9 +41,9 @@
 
     <Button
         android:id="@+id/btn03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button3"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:text="Conversor"
         app:layout_constraintBottom_toTopOf="@+id/btn02"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

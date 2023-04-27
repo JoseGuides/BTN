@@ -12,6 +12,9 @@
         android:theme="@style/Theme.BTN"
         tools:targetApi="31">
         <activity
+            android:name=".Dolar_real"
+            android:exported="false" />
+        <activity
             android:name=".Real_dolar"
             android:exported="false" />
         <activity

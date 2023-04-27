@@ -2,6 +2,7 @@ package ifpr.btn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 public class Real_dolar extends AppCompatActivity {
 
     Button btnConv;
+    Button btnVolt;
     EditText etReal;
     TextView txtReal;
 
@@ -19,10 +21,19 @@ public class Real_dolar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_real_dolar);
 
-
+        btnVolt = findViewById(R.id.btnVolt);
         btnConv = findViewById(R.id.btnConv);
         etReal = findViewById(R.id.etReal);
         txtReal= findViewById(R.id.txtReal);
+
+        btnVolt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(Real_dolar.this, TelaB3.class);
+
+                startActivity(it);
+            }
+        });
 
         btnConv.setOnClickListener(new View.OnClickListener() {
             @Override

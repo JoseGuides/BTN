@@ -12,6 +12,7 @@ import android.widget.EditText;
 public class TelaB3 extends AppCompatActivity {
 
     Button btnV3;
+    Button btnDolar;
     Button btnReal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,16 @@ public class TelaB3 extends AppCompatActivity {
 
         btnV3=findViewById(R.id.btnV3);
         btnReal=findViewById(R.id.btnReal);
+        btnDolar = findViewById(R.id.btnDolar);
+
+        btnDolar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(TelaB3.this, Dolar_real.class);
+
+                startActivity(it);
+            }
+        });
 
         btnReal.setOnClickListener(new View.OnClickListener() {
             @Override
