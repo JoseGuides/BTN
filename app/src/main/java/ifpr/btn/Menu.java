@@ -43,7 +43,7 @@ public class Menu extends AppCompatActivity {
         btn04.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, TelaB4.class);
+                Intent it = new Intent(Menu.this, Imc_B4.class);
                 startActivity(it);
             }
         });
@@ -52,7 +52,7 @@ public class Menu extends AppCompatActivity {
         btn03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, TelaB3.class);
+                Intent it = new Intent(Menu.this, Conversao_B3.class);
 
                 startActivity(it);
             }
@@ -62,7 +62,7 @@ public class Menu extends AppCompatActivity {
         btn02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, TelaB2.class);
+                Intent it = new Intent(Menu.this, Memoria_B2.class);
 
                 startActivity(it);
             }
@@ -72,7 +72,7 @@ public class Menu extends AppCompatActivity {
         btn01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, TelaB1.class);
+                Intent it = new Intent(Menu.this, Calculadora_B1.class);
 
                 startActivity(it);
             }

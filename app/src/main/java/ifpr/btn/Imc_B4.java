@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-public class TelaB4 extends AppCompatActivity {
+public class Imc_B4 extends AppCompatActivity {
 
     Button btnV4;
     Button btnCalc;
@@ -41,12 +41,7 @@ public class TelaB4 extends AppCompatActivity {
                 double d2 = Double.parseDouble(peso);
                 double r = d2 / (d1 * d1);
 
-
-
                 DecimalFormat df = new DecimalFormat("0.00");
-
-
-
 
                txtResult.setText(df.format(r));
             }
@@ -54,7 +49,7 @@ public class TelaB4 extends AppCompatActivity {
         btnV4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB4.this, Menu.class);
+                Intent it = new Intent(Imc_B4.this, Menu.class);
                 startActivity(it);
             }
         });

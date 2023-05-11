@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Real_dolar extends AppCompatActivity {
+public class Real_dolar_conversao extends AppCompatActivity {
 
     Button btnConv;
     Button btnVolt;
@@ -29,7 +29,7 @@ public class Real_dolar extends AppCompatActivity {
         btnVolt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Real_dolar.this, TelaB3.class);
+                Intent it = new Intent(Real_dolar_conversao.this, Conversao_B3.class);
 
                 startActivity(it);
             }

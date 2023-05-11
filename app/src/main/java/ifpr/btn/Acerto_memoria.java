@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Acerto extends AppCompatActivity {
+public class Acerto_memoria extends AppCompatActivity {
 
     Button button2;
 
@@ -21,7 +21,7 @@ public class Acerto extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Acerto.this, Menu.class);
+                Intent it = new Intent(Acerto_memoria.this, Menu.class);
                 startActivity(it);            }
         });
     }

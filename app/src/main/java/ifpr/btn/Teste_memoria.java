@@ -37,11 +37,11 @@ public class Teste_memoria extends AppCompatActivity {
 
                 if (abc.equalsIgnoreCase(cba)){
 
-                    Intent it = new Intent(Teste_memoria.this, Acerto.class);
+                    Intent it = new Intent(Teste_memoria.this, Acerto_memoria.class);
                     startActivity(it);
 
                 }else {
-                    Intent it = new Intent(Teste_memoria.this, TelaB2.class);
+                    Intent it = new Intent(Teste_memoria.this, Memoria_B2.class);
                     startActivity(it);
                 }
 

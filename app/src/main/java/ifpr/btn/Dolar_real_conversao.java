@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Dolar_real extends AppCompatActivity {
+public class Dolar_real_conversao extends AppCompatActivity {
 
 
     Button btnConvert;
@@ -30,7 +30,7 @@ public class Dolar_real extends AppCompatActivity {
         btnVol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Dolar_real.this, TelaB3.class);
+                Intent it = new Intent(Dolar_real_conversao.this, Conversao_B3.class);
                 startActivity(it);
             }
         });

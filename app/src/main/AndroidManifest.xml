@@ -12,19 +12,19 @@
         android:theme="@style/Theme.BTN"
         tools:targetApi="31">
         <activity
-            android:name=".Dolar_real"
+            android:name=".Dolar_real_conversao"
             android:exported="false" />
         <activity
-            android:name=".Real_dolar"
+            android:name=".Real_dolar_conversao"
             android:exported="false" />
         <activity
-            android:name=".Acerto"
+            android:name=".Acerto_memoria"
             android:exported="false" />
         <activity
             android:name=".Teste_memoria"
             android:exported="false" />
         <activity
-            android:name=".Resultado"
+            android:name=".Resultado_calculadora"
             android:exported="false" />
         <activity
             android:name=".TelaB6"
@@ -33,16 +33,16 @@
             android:name=".TelaB5"
             android:exported="false" />
         <activity
-            android:name=".TelaB4"
+            android:name=".Imc_B4"
             android:exported="false" />
         <activity
-            android:name=".TelaB3"
+            android:name=".Conversao_B3"
             android:exported="false" />
         <activity
-            android:name=".TelaB2"
+            android:name=".Memoria_B2"
             android:exported="false" />
         <activity
-            android:name=".TelaB1"
+            android:name=".Calculadora_B1"
             android:exported="false" />
         <activity
             android:name=".Menu"

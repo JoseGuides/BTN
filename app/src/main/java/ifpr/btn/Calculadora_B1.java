@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class TelaB1 extends AppCompatActivity {
+public class Calculadora_B1 extends AppCompatActivity {
     Button btnV1;
     Button btnSoma;
     Button btnSubtra;
@@ -47,7 +47,7 @@ public class TelaB1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent it = new Intent(TelaB1.this, Resultado.class);
+                Intent it = new Intent(Calculadora_B1.this, Resultado_calculadora.class);
 
                 it.putExtra("num1", etnum1.getText().toString());
                 it.putExtra("num2", etnum2.getText().toString());
@@ -71,7 +71,7 @@ public class TelaB1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent it = new Intent(TelaB1.this, Resultado.class);
+                Intent it = new Intent(Calculadora_B1.this, Resultado_calculadora.class);
 
                 it.putExtra("num1", etnum1.getText().toString());
                 it.putExtra("num2", etnum2.getText().toString());
@@ -95,7 +95,7 @@ public class TelaB1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent it = new Intent(TelaB1.this, Resultado.class);
+                Intent it = new Intent(Calculadora_B1.this, Resultado_calculadora.class);
 
                 it.putExtra("num1", etnum1.getText().toString());
                 it.putExtra("num2", etnum2.getText().toString());
@@ -119,7 +119,7 @@ public class TelaB1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent it = new Intent(TelaB1.this, Resultado.class);
+                Intent it = new Intent(Calculadora_B1.this, Resultado_calculadora.class);
 
                 it.putExtra("num1", etnum1.getText().toString());
                 it.putExtra("num2", etnum2.getText().toString());
@@ -141,7 +141,7 @@ public class TelaB1 extends AppCompatActivity {
         btnV1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB1.this, Menu.class);
+                Intent it = new Intent(Calculadora_B1.this, Menu.class);
 
 
                 startActivity(it);

@@ -6,10 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 
-public class TelaB3 extends AppCompatActivity {
+public class Conversao_B3 extends AppCompatActivity {
 
     Button btnV3;
     Button btnDolar;
@@ -26,7 +25,7 @@ public class TelaB3 extends AppCompatActivity {
         btnDolar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB3.this, Dolar_real.class);
+                Intent it = new Intent(Conversao_B3.this, Dolar_real_conversao.class);
 
                 startActivity(it);
             }
@@ -35,14 +34,14 @@ public class TelaB3 extends AppCompatActivity {
         btnReal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB3.this, Real_dolar.class);
+                Intent it = new Intent(Conversao_B3.this, Real_dolar_conversao.class);
                 startActivity(it);
             }
         });
         btnV3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB3.this, Menu.class);
+                Intent it = new Intent(Conversao_B3.this, Menu.class);
                 startActivity(it);
             }
         });

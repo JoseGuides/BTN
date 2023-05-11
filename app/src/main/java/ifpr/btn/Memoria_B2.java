@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class TelaB2 extends AppCompatActivity {
+public class Memoria_B2 extends AppCompatActivity {
 
     Button btnV2;
 
@@ -27,7 +27,7 @@ public class TelaB2 extends AppCompatActivity {
         btnCome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB2.this, Teste_memoria.class);
+                Intent it = new Intent(Memoria_B2.this, Teste_memoria.class);
                 it.putExtra("abc", txtabc.getText().toString());
 
                 startActivity(it);
@@ -36,7 +36,7 @@ public class TelaB2 extends AppCompatActivity {
         btnV2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB2.this, Menu.class);
+                Intent it = new Intent(Memoria_B2.this, Menu.class);
 
                 startActivity(it);
             }

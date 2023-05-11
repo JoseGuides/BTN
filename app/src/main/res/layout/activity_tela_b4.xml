@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaB4">
+    tools:context=".Imc_B4">
 
     <Button
         android:id="@+id/btnV4"

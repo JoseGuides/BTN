@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Resultado extends AppCompatActivity {
+public class Resultado_calculadora extends AppCompatActivity {
 
 
 
@@ -43,7 +43,7 @@ public class Resultado extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Resultado.this, Menu.class);
+                Intent it = new Intent(Resultado_calculadora.this, Menu.class);
 
 
 
@@ -56,7 +56,7 @@ public class Resultado extends AppCompatActivity {
         btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Resultado.this, TelaB1.class);
+                Intent it = new Intent(Resultado_calculadora.this, Calculadora_B1.class);
                 it.putExtra("num1", num1);
                 it.putExtra("num2", num2);
                 startActivity(it);

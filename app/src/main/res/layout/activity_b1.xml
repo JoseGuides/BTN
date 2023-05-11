@@ -5,7 +5,7 @@
     android:id="@+id/btnSub"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaB1">
+    tools:context=".Calculadora_B1">
 
     <TextView
         android:id="@+id/textView2"
