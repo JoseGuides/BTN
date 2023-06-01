@@ -28,12 +28,19 @@ public class TelaB6 extends AppCompatActivity {
         btnGerar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int i = 0;
+                int n0;
+                int n1;
 
+                while(i != 5) {
 
+                    int =
+                    String num = String.valueOf(Math.random() * 1000); //string que gera os numeros aleatorios
 
-                String num = String.valueOf(Math.random());
+                    txtNumeros.setText(num);
 
-                txtNumeros.setText(num);
+                    i++;
+                };
             }
         });
         btnV6.setOnClickListener(new View.OnClickListener() {
