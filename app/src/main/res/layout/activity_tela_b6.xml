@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaB6">
+    tools:context=".Gerador_B6">
 
     <Button
         android:id="@+id/btnV6"

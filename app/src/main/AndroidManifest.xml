@@ -27,7 +27,7 @@
             android:name=".Resultado_calculadora"
             android:exported="false" />
         <activity
-            android:name=".TelaB6"
+            android:name=".Gerador_B6"
             android:exported="false" />
         <activity
             android:name=".TelaB5"

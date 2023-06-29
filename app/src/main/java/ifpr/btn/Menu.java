@@ -25,7 +25,7 @@ public class Menu extends AppCompatActivity {
         btn06.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, TelaB6.class);
+                Intent it = new Intent(Menu.this, Gerador_B6.class);
                 startActivity(it);
             }
         });

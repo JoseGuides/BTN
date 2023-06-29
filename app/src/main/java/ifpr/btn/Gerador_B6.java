@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 
 public class
-TelaB6 extends AppCompatActivity {
+Gerador_B6 extends AppCompatActivity {
     Button btnV6;
 
     Button btnGerar;
@@ -113,7 +113,7 @@ TelaB6 extends AppCompatActivity {
         btnV6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(TelaB6.this, Menu.class);
+                Intent it = new Intent(Gerador_B6.this, Menu.class);
                 startActivity(it);
             }
         });
