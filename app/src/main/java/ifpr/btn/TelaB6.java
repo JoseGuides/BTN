@@ -27,47 +27,89 @@ TelaB6 extends AppCompatActivity {
         txtNumeros=findViewById(R.id.txtNumeros);
 
         btnGerar.setOnClickListener(new View.OnClickListener() {
-                                        @Override
-                                        public void onClick(View view) {
-                                            int i = 0;
-                                            int n0 = 0;
-                                            int n1;
-                                            int n2;
-                                            int n3;
-                                            int n4;
 
-                                            while (i != 2) {
-                                                if (i == 0) {
-                                                    int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
-                                                    txtNumeros.setText(String.valueOf(num));
-                                                    n0 = num;
-                                                }
-                                                if (i == 1) {
-                                                    int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
-                                                    n1 = num;
-                                                    if (n0 == n1) {
-                                                        num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
-                                                        n1 = num;
-                                                    }
-                                                }
-                                                if (i == 2) {
-                                                    int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
-                                                    n2 = num;
-                                                    if (n0 == n2) {
-                                                        num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
-                                                        n2 = num;
-                                                    }
-                                                    if (n1 == n2) {
-                                                        num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
-                                                        n2 = num;
-                                                    }
-                                                }
-                                                ;
-                                                i++;
-                                            }
-                                            ;
-                                        }
-        }
+            @Override
+            public void onClick(View view) {
+
+                int i = 0;
+                int n0 = 0;
+                int n1 = 0;
+                int n2 = 0;
+                int n3 = 0;
+                int n4 = 0;
+
+
+                while (i != 2) {
+                    if (i == 0) {
+                        int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                        txtNumeros.setText(String.valueOf(num));
+                        n0 = num;
+                    }
+                    if (i == 1) {
+                        int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                        n1 = num;
+                        if (n0 == n1) {
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n1 = num;
+                        }
+                    }
+                    if (i == 2){
+                        int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                        n2 = num;
+                        if(n0 == n2){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n2 = num;
+                        }
+                        if(n1 == n2){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n2 = num;
+                        }
+
+                    }
+                    if (i == 3){
+                        int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                        n3 = num;
+                        if(n0 == n3){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n3 = num;
+                        }
+                        if(n1 == n3){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n3 = num;
+                        }
+                        if(n2 == n3){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n3 = num;
+                        }
+
+                    }
+                    if (i == 4){
+                        int num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                        n4 = num;
+                        if(n0 == n4){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n4 = num;
+                        }
+                        if(n1 == n4){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n4 = num;
+                        }
+                        if(n2 == n4){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n4 = num;
+                        }
+                        if(n3 == n4){
+                            num = (int) (Math.random() * 1000); //string que gera os numeros aleatorios
+                            n4 = num;
+                        }
+
+                    }
+
+                    i++;
+                }
+            }
+        });
+
         btnV6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
