@@ -34,7 +34,7 @@ public class Menu extends AppCompatActivity {
         btn05.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Menu.this, TelaB5.class);
+                Intent it = new Intent(Menu.this, Localizador_B5.class);
                 startActivity(it);
             }
         });

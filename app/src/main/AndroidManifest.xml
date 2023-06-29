@@ -30,7 +30,7 @@
             android:name=".Gerador_B6"
             android:exported="false" />
         <activity
-            android:name=".TelaB5"
+            android:name=".Localizador_B5"
             android:exported="false" />
         <activity
             android:name=".Imc_B4"
